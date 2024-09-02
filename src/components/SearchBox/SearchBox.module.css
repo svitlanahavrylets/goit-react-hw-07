@@ -1,0 +1,22 @@
+.inputFindForm {
+  margin-bottom: 16px;
+}
+.inputTitle {
+  color: black;
+  display: flex;
+  align-items: start;
+}
+.input {
+  width: 98%;
+  color: black;
+  border-radius: 4px;
+  box-shadow: 0 0 8px rgba(14, 168, 0, 0.5);
+  transition: box-shadow 0.3s ease;
+}
+
+.inputFindForm :hover,
+.inputFindForm :focus {
+  border-color: rgb(14, 168, 0);
+  border-radius: 4px;
+  outline: none;
+}
