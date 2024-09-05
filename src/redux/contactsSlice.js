@@ -60,7 +60,7 @@ export const selectContacts = (state) => state.contacts.items;
 export const selectFilteredContacts = createSelector(
   [selectContacts, selectFilterValue],
   (contacts, value) => {
-    contacts.filter((contact) =>
+    return contacts.filter((contact) =>
       contact.name.toLocaleLowerCase().includes(value.toLocaleLowerCase())
     );
   }
